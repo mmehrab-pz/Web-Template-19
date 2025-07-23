@@ -509,4 +509,135 @@ main {
   text-transform: capitalize;
   font-family: "1.042vw";
   font-family: "Regular";
+}
+
+#tournaments {
+  width: 100%;
+  padding-top: 90px;
+  padding-inline: 5%;
+}
+#tournaments > h2 {
+  color: white;
+  text-transform: capitalize;
+  font-family: "SemiBold";
+  font-size: 3.177vw;
+  margin-bottom: 50px;
+}
+#tournaments > div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#tournaments > div > span {
+  width: 560px;
+  height: 650px;
+  background-color: #080F12;
+  cursor: pointer;
+  position: relative;
+}
+#tournaments > div > span > figure {
+  height: 60%;
+  overflow: hidden;
+  position: relative;
+}
+#tournaments > div > span > figure > img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform-origin: center;
+  transition: 0.4s ease-in-out;
+}
+#tournaments > div > span > figure::before {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: -90%;
+  position: absolute;
+  top: 0;
+  transform: skewX(25deg);
+  width: 30%;
+  z-index: 3;
+  pointer-events: none;
+}
+#tournaments > div > span > div {
+  width: 100%;
+  height: 40%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#tournaments > div > span > div > div {
+  width: 100%;
+}
+#tournaments > div > span > div > div:nth-of-type(1) > h3 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 2.031vw;
+  font-family: "SemiBold";
+  transition: 0.4s ease-in-out;
+}
+#tournaments > div > span > div > div:nth-of-type(1) > h6 {
+  font-size: 1.042vw;
+  text-transform: capitalize;
+  color: #92949F;
+  font-family: "Regular";
+}
+#tournaments > div > span > div > div:nth-of-type(2) {
+  display: flex;
+}
+#tournaments > div > span > div > div:nth-of-type(2) > span {
+  border: 2px solid #1698BB;
+  color: white;
+  text-transform: capitalize;
+  padding: 4px 8px;
+  margin-right: 20px;
+  font-size: 0.938vw;
+  font-family: "Regular";
+}
+#tournaments > div > span > div > div:nth-of-type(3) {
+  display: flex;
+}
+#tournaments > div > span > div > div:nth-of-type(3) > span {
+  display: flex;
+  font-size: 1.042vw;
+  color: #fafafa;
+  font-family: "Regular";
+  text-transform: capitalize;
+  margin-right: 20px;
+}
+#tournaments > div > span > div > div:nth-of-type(3) > span > i {
+  color: #1698BB;
+  margin-right: 10px;
+}
+#tournaments > div > span > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background-color: #1698BB;
+}
+#tournaments > div > span > span > i {
+  transition: 0.4s linear;
+}
+#tournaments > div > span:hover > figure > img {
+  transform: scale(1.1);
+}
+#tournaments > div > span:hover > figure::before {
+  animation: shine 0.65s;
+}
+#tournaments > div > span:hover > div > div:nth-of-type(1) > h3 {
+  color: gold;
+}
+#tournaments > div > span:hover > span > i {
+  transform: rotate(-45deg);
 }/*# sourceMappingURL=master.css.map */
