@@ -912,7 +912,7 @@ main {
                             color: #1698BB;
                             transition: all .3s ease-in-out;
 
-                            &:hover{
+                            &:hover {
                                 background-color: white;
                             }
                         }
@@ -935,6 +935,52 @@ main {
                     }
                 }
             }
+        }
+    }
+}
+
+// -----------------singUp--------------
+#singUp {
+    width: 100%;
+    margin-top: 90px;
+    // *********
+    padding-inline: 5%;
+    border: 1px solid white;
+
+    >div {
+        width: 100%;
+        height: 545px;
+        background-image: url(../img/signup-bg.png);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        >h2 {
+            color: white;
+            text-transform: capitalize;
+            font-size: 3.177vw;
+            font-family: 'Medium';
+            text-align: center;
+        }
+
+        >a {
+            color: white;
+            background-color: #1698BB;
+            padding: 12px 32px;
+            font-size: 0.938vw;
+            font-family: 'Medium';
+            text-transform: capitalize;
+            margin-top: 30px;
+            transition: .4s ease-in-out;
+
+            &:hover {
+                background-color: white;
+                color: #1698BB;
+            }
+
         }
     }
 }
