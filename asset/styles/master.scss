@@ -747,7 +747,7 @@ main {
                 }
             }
 
-            >span{
+            >span {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -761,7 +761,7 @@ main {
                 right: 15px;
                 background-color: #1698BB;
 
-                >i{
+                >i {
                     transition: .4s linear;
                 }
             }
@@ -787,9 +787,151 @@ main {
                     }
                 }
 
-                >span{
-                    >i{
+                >span {
+                    >i {
                         transform: rotate(-45deg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// -----------------streaming--------------
+#streaming {
+    width: 100%;
+    padding-top: 90px;
+    // *********
+    padding-inline: 5%;
+
+    >h2 {
+        color: white;
+        text-transform: capitalize;
+        font-family: 'SemiBold';
+        font-size: 3.177vw;
+        margin-bottom: 50px;
+    }
+
+    >div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 185px;
+
+        // ---streaming cards
+        >span {
+            width: 560px;
+            height: 415px;
+            position: relative;
+            cursor: pointer;
+
+            >figure {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+
+                >img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            >div {
+                width: 560px;
+                height: 185px;
+                padding: 15px;
+                background: rgba(22, 152, 187, 0.05);
+                backdrop-filter: blur(30px);
+                transition: all 0.3s ease-in-out;
+                position: absolute;
+                z-index: 2;
+                top: 100%;
+                left: 0;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+
+                >div {
+                    width: 100%;
+                    display: flex;
+
+                    &:nth-of-type(1) {
+
+                        >div {
+                            margin-left: 20px;
+
+                            >h3 {
+                                color: white;
+                                text-transform: capitalize;
+                                font-size: 2.031vw;
+                                font-family: 'SemiBold';
+                                transition: .4s ease-in-out;
+                                margin-bottom: 5px;
+                            }
+
+                            >h6 {
+                                font-size: 1.042vw;
+                                text-transform: capitalize;
+                                color: #92949F;
+                                font-family: 'Regular';
+                            }
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        >span {
+                            display: flex;
+                            font-size: 1.042vw;
+                            color: #fafafa;
+                            font-family: 'Regular';
+                            text-transform: capitalize;
+                            margin-right: 20px;
+
+                            >i {
+                                color: #1698BB;
+                                margin-right: 10px;
+                            }
+
+                        }
+
+                        >a {
+                            width: 160px;
+                            height: 45px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border: 2px solid #1698BB;
+                            text-transform: capitalize;
+                            font-family: 'Medium';
+                            font-size: 18px;
+                            color: #1698BB;
+                            transition: all .3s ease-in-out;
+
+                            &:hover{
+                                background-color: white;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                >div {
+                    top: 95%;
+
+                    >div {
+                        &:nth-of-type(1) {
+                            >div {
+                                >h3 {
+                                    color: gold;
+                                }
+                            }
+                        }
                     }
                 }
             }
