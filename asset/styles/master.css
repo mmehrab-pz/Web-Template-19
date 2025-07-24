@@ -174,7 +174,7 @@ header #header-content > div > a:nth-of-type(2):hover {
 
 main {
   width: 100%;
-  height: 900vh;
+  padding-bottom: 80px;
   background-image: url(../img/bg-section-1.png);
   background-attachment: fixed;
   background-size: cover;
@@ -1082,4 +1082,81 @@ main {
 }
 #team > div > span:hover > div > div:nth-of-type(1) > h3 {
   color: gold;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  padding-top: 65px;
+  padding-inline: 5%;
+}
+footer > section {
+  display: flex;
+}
+footer > section > div {
+  height: 100%;
+}
+footer > section > div:nth-of-type(2), footer > section > div:nth-of-type(3), footer > section > div:nth-of-type(4) {
+  padding-left: 140px;
+}
+footer > section > div > figure {
+  margin-bottom: 25px;
+}
+footer > section > div > h3 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 32px;
+  font-family: "Medium";
+  margin-bottom: 25px;
+}
+footer > section > div > p {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #92949F;
+  font-family: "Regular";
+}
+footer > section > div > ul {
+  width: 100%;
+}
+footer > section > div > ul > li {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #92949F;
+  font-family: "Regular";
+  padding-bottom: 10px;
+}
+footer > section > div > ul > li > a {
+  transition: 0.4s ease-in-out;
+}
+footer > section > div > ul > li > a:hover {
+  color: #1698BB;
+}
+footer > section > div > div {
+  display: flex;
+}
+footer > section > div > div > a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1698BB;
+  margin-right: 15px;
+  transition: 0.4s ease-in-out;
+  color: white;
+  font-size: 20px;
+}
+footer > section > div > div > a:hover {
+  background-color: gold;
+}
+footer > a {
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+}
+footer > a > figure {
+  width: 100%;
+}
+footer > a > figure > img {
+  max-width: 100%;
 }/*# sourceMappingURL=master.css.map */
