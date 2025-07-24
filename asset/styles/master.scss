@@ -983,3 +983,137 @@ main {
         }
     }
 }
+
+// -----------------update--------------
+#update {
+    width: 100%;
+    padding-top: 90px;
+    // *********
+    padding-inline: 5%;
+
+    >h2 {
+        color: white;
+        text-transform: capitalize;
+        font-family: 'SemiBold';
+        font-size: 3.177vw;
+        margin-bottom: 50px;
+    }
+
+    >div {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        // -------update cards
+        >span {
+            width: 415px;
+            height: 590px;
+            background-color: #020A0D;
+            cursor: pointer;
+
+            >figure {
+                width: 100%;
+                height: 70%;
+                overflow: hidden;
+                position: relative;
+
+                >img {
+                    width: 100%;
+                    object-fit: cover;
+                    transition: .4s ease-in-out;
+                }
+
+                &::before {
+                    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+                    content: "";
+                    display: block;
+                    height: 100%;
+                    left: -90%;
+                    position: absolute;
+                    top: 0;
+                    transform: skewX(25deg);
+                    width: 30%;
+                    z-index: 3;
+                    pointer-events: none;
+                }
+            }
+
+            >div {
+                width: 100%;
+                height: 30%;
+                padding: 15px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                >div {
+                    width: 100%;
+
+                    &:nth-of-type(1) {
+                        >h3 {
+                            color: white;
+                            text-transform: capitalize;
+                            font-size: 2.031vw;
+                            font-family: 'SemiBold';
+                            transition: .4s ease-in-out;
+                            margin-bottom: 5px;
+                        }
+
+                        >h6 {
+                            font-size: 1.042vw;
+                            text-transform: capitalize;
+                            color: #92949F;
+                            font-family: 'Regular';
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        display: flex;
+                        justify-content: flex-end;
+
+                        >a {
+                            width: 160px;
+                            height: 45px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border: 2px solid #1698BB;
+                            text-transform: capitalize;
+                            font-family: 'Medium';
+                            font-size: 18px;
+                            color: #1698BB;
+                            transition: all .3s ease-in-out;
+
+                            &:hover {
+                                background-color: white;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                >figure {
+                    >img {
+                        transform: scale(1.1);
+                    }
+
+                    &::before {
+                        animation: shine 0.65s;
+                    }
+                }
+
+                >div {
+                    >div {
+                        &:nth-of-type(1) {
+                            >h3 {
+                                color: gold;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
