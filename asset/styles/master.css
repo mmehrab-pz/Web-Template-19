@@ -72,10 +72,10 @@ header > nav > ul > li > ul > li:hover {
   background-color: rgba(22, 151, 187, 0.3019607843);
 }
 header > nav > ul > li:first-of-type {
-  color: #1698BB;
+  color: #1698bb;
 }
 header > nav > ul > li:hover > a {
-  color: #1698BB;
+  color: #1698bb;
 }
 header > nav > ul > li:hover > ul {
   transform: scaleY(1);
@@ -155,20 +155,20 @@ header #header-content > div > a {
   transition: 0.3s ease-in-out;
 }
 header #header-content > div > a:nth-of-type(1) {
-  background-color: #1698BB;
+  background-color: #1698bb;
   color: white;
 }
 header #header-content > div > a:nth-of-type(1):hover {
   background-color: white;
-  color: #1698BB;
+  color: #1698bb;
 }
 header #header-content > div > a:nth-of-type(2) {
   background-color: white;
-  color: #1698BB;
+  color: #1698bb;
   margin-left: 25px;
 }
 header #header-content > div > a:nth-of-type(2):hover {
-  background-color: #1698BB;
+  background-color: #1698bb;
   color: white;
 }
 
@@ -200,50 +200,54 @@ main {
 }
 #explore > div > span {
   display: flex;
-  width: 410px;
-  height: 235px;
+  width: 100%;
+  border: 1px solid #141516;
+  height: 157px;
   background: rgba(22, 152, 187, 0.05);
   -webkit-backdrop-filter: blur(30px);
-          backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
+  padding: 10px;
 }
 #explore > div > span > * {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 #explore > div > span > figure {
-  width: 100px;
-  height: 100px;
+  width: 72px;
+  height: 72px;
   overflow: hidden;
   border-radius: 50%;
-  border: 1px solid #45474F;
+  border: 1px solid #45474f;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.4s ease-in-out;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 #explore > div > span > figure > img {
-  width: 50px;
+  width: 32px;
+  height: 32px;
 }
 #explore > div > span:last-of-type > figure > img {
   width: 80px;
 }
 #explore > div > span > h5 {
   color: white;
-  font-size: 1.302vw;
+  font-size: 17px;
   font-family: "Medium";
   text-transform: capitalize;
 }
 #explore > div > span > p {
-  font-size: 1.042vw;
-  color: #92949F;
+  font-size: 15px;
+  color: #92949f;
   font-family: "Medium";
   text-transform: capitalize;
 }
 #explore > div > span:hover > figure {
-  background-color: #1698BB;
+  background-color: #1698bb;
 }
 
 #games {
@@ -255,7 +259,7 @@ main {
   color: white;
   text-transform: capitalize;
   font-family: "SemiBold";
-  font-size: 3.177vw;
+  font-size: 20px;
   margin-bottom: 50px;
 }
 #games > div {
@@ -263,18 +267,22 @@ main {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  row-gap: 10px;
 }
 #games > div > span {
-  width: 415px;
+  width: 100%;
   height: 550px;
   cursor: pointer;
   overflow: hidden;
   position: relative;
   transition: all 0.3s ease-in-out;
+  margin-bottom: 20px;
 }
 #games > div > span::before {
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
   content: "";
   display: block;
   height: 100%;
@@ -295,7 +303,7 @@ main {
 #games > div > span > figure > img {
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #games > div > span > div {
   width: 100%;
@@ -309,12 +317,12 @@ main {
 #games > div > span > div > h2 {
   color: white;
   text-transform: capitalize;
-  font-size: 2.031vw;
+  font-size: 23px;
   font-family: "SemiBold";
   transition: 0.4s ease-in-out;
 }
 #games > div > span > div > p {
-  font-size: 1.042vw;
+  font-size: 15px;
   color: white;
   font-family: "Regular";
 }
@@ -338,7 +346,7 @@ main {
   color: gold;
 }
 #games > div > span:hover {
-  box-shadow: 0px 60px 46px -60px #1698BB;
+  box-shadow: 0px 60px 46px -60px #1698bb;
 }
 #games > div > span:hover::before {
   animation: shine 0.65s;
@@ -366,7 +374,7 @@ main {
 }
 #comment > div > h2 {
   color: white;
-  font-size: 3.177vw;
+  font-size: 29px;
   font-family: "Medium";
   text-transform: capitalize;
   text-align: center;
@@ -374,15 +382,16 @@ main {
 }
 #comment > div > h3 {
   color: white;
-  font-size: 1.302vw;
+  font-size: 17px;
   font-family: "SemiBold";
   text-transform: capitalize;
   text-align: center;
   margin-bottom: 35px;
 }
 #comment > div > p {
+  width: 80%;
   color: white;
-  font-size: 1.042vw;
+  font-size: 15px;
   font-family: "Regular";
   text-transform: capitalize;
   text-align: center;
@@ -391,7 +400,7 @@ main {
 #comment > div > div {
   width: 280px;
   padding: 8px 16px;
-  background-color: #1698BB;
+  background-color: #1698bb;
   display: flex;
   justify-content: space-between;
 }
@@ -421,23 +430,30 @@ main {
   color: white;
   text-transform: capitalize;
   font-family: "SemiBold";
-  font-size: 3.177vw;
-  margin-bottom: 50px;
+  font-size: 29px;
+  margin-bottom: 20px;
   text-align: center;
 }
 #players > div {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 #players > div > div {
-  width: 530px;
+  width: 100%;
   height: 200px;
   padding: 15px;
-  background-color: #0A1113;
+  background-color: #0a1113;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  &:nth-of-type(2) {
+    display: none;
+  }
+  &:nth-of-type(3) {
+    display: none;
+  }
 }
 #players > div > div > div {
   width: 100%;
@@ -455,7 +471,7 @@ main {
   padding-left: 10px;
 }
 #players > div > div > div > figure > div > h3 {
-  font-size: 1.615vw;
+  font-size: 20px;
   color: white;
   text-transform: capitalize;
   font-family: "SemiBold";
@@ -463,7 +479,7 @@ main {
 #players > div > div > div > figure > div > h6 {
   color: white;
   text-transform: capitalize;
-  font-size: 1.042vw;
+  font-size: 15px;
   font-family: "Regular";
 }
 #players > div > div > div > span {
@@ -473,13 +489,13 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #92949F;
+  border: 1px solid #92949f;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
 #players > div > div > div > span > i {
   font-size: 22px;
-  color: #92949F;
+  color: #92949f;
   transition: 0.3s ease-in-out;
 }
 #players > div > div > div > span:hover {
@@ -494,10 +510,10 @@ main {
   justify-content: space-between;
 }
 #players > div > div > ul > li > h6 {
-  font-size: 1.042vw;
+  font-size: 15px;
   text-transform: capitalize;
   font-family: "Regular";
-  color: #92949F;
+  color: #92949f;
   margin-bottom: 5px;
 }
 #players > div > div > ul > li > div {
@@ -507,7 +523,7 @@ main {
 #players > div > div > ul > li > p {
   color: white;
   text-transform: capitalize;
-  font-family: "1.042vw";
+  font-family: "15px";
   font-family: "Regular";
 }
 
@@ -520,19 +536,18 @@ main {
   color: white;
   text-transform: capitalize;
   font-family: "SemiBold";
-  font-size: 3.177vw;
-  margin-bottom: 50px;
+  font-size: 29px;
 }
 #tournaments > div {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 20px;
 }
 #tournaments > div > span {
-  width: 560px;
-  height: 650px;
-  background-color: #080F12;
+  width: 100%;
+  background-color: #080f12;
   cursor: pointer;
   position: relative;
 }
@@ -543,13 +558,18 @@ main {
 }
 #tournaments > div > span > figure > img {
   width: 100%;
+  height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transform-origin: center;
   transition: 0.4s ease-in-out;
 }
 #tournaments > div > span > figure::before {
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
   content: "";
   display: block;
   height: 100%;
@@ -563,11 +583,9 @@ main {
 }
 #tournaments > div > span > div {
   width: 100%;
-  height: 40%;
-  padding: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  padding: 20px 5px;
 }
 #tournaments > div > span > div > div {
   width: 100%;
@@ -575,41 +593,43 @@ main {
 #tournaments > div > span > div > div:nth-of-type(1) > h3 {
   color: white;
   text-transform: capitalize;
-  font-size: 2.031vw;
+  font-size: 23px;
   font-family: "SemiBold";
   transition: 0.4s ease-in-out;
 }
 #tournaments > div > span > div > div:nth-of-type(1) > h6 {
-  font-size: 1.042vw;
+  font-size: 15px;
   text-transform: capitalize;
-  color: #92949F;
+  color: #92949f;
   font-family: "Regular";
 }
 #tournaments > div > span > div > div:nth-of-type(2) {
   display: flex;
 }
 #tournaments > div > span > div > div:nth-of-type(2) > span {
-  border: 2px solid #1698BB;
+  border: 2px solid #1698bb;
   color: white;
   text-transform: capitalize;
   padding: 4px 8px;
   margin-right: 20px;
-  font-size: 0.938vw;
+  font-size: 13px;
   font-family: "Regular";
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 #tournaments > div > span > div > div:nth-of-type(3) {
   display: flex;
 }
 #tournaments > div > span > div > div:nth-of-type(3) > span {
   display: flex;
-  font-size: 1.042vw;
+  font-size: 15px;
   color: #fafafa;
   font-family: "Regular";
   text-transform: capitalize;
   margin-right: 20px;
 }
 #tournaments > div > span > div > div:nth-of-type(3) > span > i {
-  color: #1698BB;
+  color: #1698bb;
   margin-right: 10px;
 }
 #tournaments > div > span > span {
@@ -624,7 +644,7 @@ main {
   position: absolute;
   bottom: 15px;
   right: 15px;
-  background-color: #1698BB;
+  background-color: #1698bb;
 }
 #tournaments > div > span > span > i {
   transition: 0.4s linear;
@@ -651,7 +671,7 @@ main {
   color: white;
   text-transform: capitalize;
   font-family: "SemiBold";
-  font-size: 3.177vw;
+  font-size: 15px;
   margin-bottom: 50px;
 }
 #streaming > div {
@@ -659,11 +679,11 @@ main {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  row-gap: 200px;
   padding-bottom: 185px;
 }
 #streaming > div > span {
-  width: 560px;
-  height: 415px;
+  width: 100%;
   position: relative;
   cursor: pointer;
 }
@@ -675,19 +695,19 @@ main {
 #streaming > div > span > figure > img {
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #streaming > div > span > div {
-  width: 560px;
+  width: 100%;
   height: 185px;
   padding: 15px;
   background: rgba(22, 152, 187, 0.05);
   -webkit-backdrop-filter: blur(30px);
-          backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
   transition: all 0.3s ease-in-out;
   position: absolute;
   z-index: 2;
-  top: 100%;
+  top: 95%;
   left: 0;
   display: flex;
   justify-content: space-between;
@@ -703,15 +723,15 @@ main {
 #streaming > div > span > div > div:nth-of-type(1) > div > h3 {
   color: white;
   text-transform: capitalize;
-  font-size: 2.031vw;
+  font-size: 23px;
   font-family: "SemiBold";
   transition: 0.4s ease-in-out;
   margin-bottom: 5px;
 }
 #streaming > div > span > div > div:nth-of-type(1) > div > h6 {
-  font-size: 1.042vw;
+  font-size: 15px;
   text-transform: capitalize;
-  color: #92949F;
+  color: #92949f;
   font-family: "Regular";
 }
 #streaming > div > span > div > div:nth-of-type(2) {
@@ -721,14 +741,14 @@ main {
 }
 #streaming > div > span > div > div:nth-of-type(2) > span {
   display: flex;
-  font-size: 1.042vw;
+  font-size: 15px;
   color: #fafafa;
   font-family: "Regular";
   text-transform: capitalize;
   margin-right: 20px;
 }
 #streaming > div > span > div > div:nth-of-type(2) > span > i {
-  color: #1698BB;
+  color: #1698bb;
   margin-right: 10px;
 }
 #streaming > div > span > div > div:nth-of-type(2) > a {
@@ -737,18 +757,18 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #1698BB;
+  border: 2px solid #1698bb;
   text-transform: capitalize;
   font-family: "Medium";
   font-size: 18px;
-  color: #1698BB;
+  color: #1698bb;
   transition: all 0.3s ease-in-out;
 }
 #streaming > div > span > div > div:nth-of-type(2) > a:hover {
   background-color: white;
 }
 #streaming > div > span:hover > div {
-  top: 95%;
+  top: 90%;
 }
 #streaming > div > span:hover > div > div:nth-of-type(1) > div > h3 {
   color: gold;
@@ -758,10 +778,11 @@ main {
   width: 100%;
   margin-top: 90px;
   padding-inline: 5%;
+  padding: 50px;
 }
 #singUp > div {
   width: 100%;
-  height: 545px;
+  height: 206px;
   background-image: url(../img/signup-bg.png);
   background-position: center;
   background-size: cover;
@@ -773,23 +794,23 @@ main {
 #singUp > div > h2 {
   color: white;
   text-transform: capitalize;
-  font-size: 3.177vw;
+  font-size: 29px;
   font-family: "Medium";
   text-align: center;
 }
 #singUp > div > a {
   color: white;
-  background-color: #1698BB;
-  padding: 12px 32px;
-  font-size: 0.938vw;
+  background-color: #1698bb;
+  padding: 6px 32px;
+  font-size: 15px;
   font-family: "Medium";
   text-transform: capitalize;
-  margin-top: 30px;
+  margin-top: 10px;
   transition: 0.4s ease-in-out;
 }
 #singUp > div > a:hover {
   background-color: white;
-  color: #1698BB;
+  color: #1698bb;
 }
 
 #update {
@@ -801,7 +822,7 @@ main {
   color: white;
   text-transform: capitalize;
   font-family: "SemiBold";
-  font-size: 3.177vw;
+  font-size: 29px;
   margin-bottom: 50px;
 }
 #update > div {
@@ -809,27 +830,29 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  row-gap: 50px;
 }
 #update > div > span {
-  width: 415px;
-  height: 590px;
-  background-color: #020A0D;
+  width: 100%;
+  background-color: #020a0d;
   cursor: pointer;
 }
 #update > div > span > figure {
   width: 100%;
-  height: 70%;
   overflow: hidden;
   position: relative;
 }
 #update > div > span > figure > img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: 0.4s ease-in-out;
 }
 #update > div > span > figure::before {
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
   content: "";
   display: block;
   height: 100%;
@@ -843,7 +866,6 @@ main {
 }
 #update > div > span > div {
   width: 100%;
-  height: 30%;
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -855,15 +877,15 @@ main {
 #update > div > span > div > div:nth-of-type(1) > h3 {
   color: white;
   text-transform: capitalize;
-  font-size: 2.031vw;
+  font-size: 23px;
   font-family: "SemiBold";
   transition: 0.4s ease-in-out;
   margin-bottom: 5px;
 }
 #update > div > span > div > div:nth-of-type(1) > h6 {
-  font-size: 1.042vw;
+  font-size: 15px;
   text-transform: capitalize;
-  color: #92949F;
+  color: #92949f;
   font-family: "Regular";
 }
 #update > div > span > div > div:nth-of-type(2) {
@@ -876,12 +898,13 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #1698BB;
+  border: 2px solid #1698bb;
   text-transform: capitalize;
   font-family: "Medium";
-  font-size: 18px;
-  color: #1698BB;
+  font-size: 14px;
+  color: #1698bb;
   transition: all 0.3s ease-in-out;
+  margin-top: 30px;
 }
 #update > div > span > div > div:nth-of-type(2) > a:hover {
   background-color: white;
@@ -898,19 +921,21 @@ main {
 
 #connected {
   width: 100%;
-  height: 305px;
   background-image: url(../img/newsletter-bg.png);
   background-position: center;
   background-size: cover;
   margin-top: 90px;
   padding-inline: 5%;
-  display: flex;
+  padding-block: 100px;
 }
 #connected > div {
-  height: 100%;
+  width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #connected > div:nth-of-type(1) {
+  width: 100%;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
@@ -918,42 +943,47 @@ main {
 #connected > div:nth-of-type(1) > h2 {
   color: white;
   text-transform: capitalize;
-  font-size: 3.177vw;
+  font-size: 29px;
   font-family: "Medium";
   margin-bottom: 10px;
 }
 #connected > div:nth-of-type(1) > p {
+  width: 100%;
   color: white;
-  font-size: 1.042vw;
+  font-size: 15px;
   font-family: "Regular";
+  text-align: justify;
 }
 #connected > div:nth-of-type(2) {
+  width: 100%;
+  display: flex;
   align-items: center;
-  justify-content: flex-end;
+  margin-top: 15px;
 }
 #connected > div:nth-of-type(2) > form {
+  width: 100%;
   height: 48px;
 }
 #connected > div:nth-of-type(2) > form > * {
   height: 100%;
 }
 #connected > div:nth-of-type(2) > form > input {
-  width: 500px;
+  width: 100%;
   padding-inline: 16px;
-  font-size: 1.042vw;
+  font-size: 24px;
   font-family: "Regular";
   color: black;
 }
 #connected > div:nth-of-type(2) > form > input::-moz-placeholder {
-  color: #92949F;
+  color: #92949f;
   text-transform: capitalize;
-  font-size: 1.042vw;
+  font-size: 16px;
   font-family: "Regular";
 }
 #connected > div:nth-of-type(2) > form > input::placeholder {
-  color: #92949F;
+  color: #92949f;
   text-transform: capitalize;
-  font-size: 1.042vw;
+  font-size: 16px;
   font-family: "Regular";
 }
 #connected > div:nth-of-type(2) > form > input:focus {
@@ -961,20 +991,21 @@ main {
   border: none;
 }
 #connected > div:nth-of-type(2) > form > button {
-  font-size: 0.938vw;
+  width: 30%;
+  font-size: 14px;
   color: white;
-  background-color: #1698BB;
+  background-color: #1698bb;
   padding-inline: 32px;
   font-family: "Medium";
   text-transform: capitalize;
   transition: 0.4s ease-in-out;
   outline: none;
   border: none;
-  margin-left: 20px;
+  margin-top: 15px;
 }
 #connected > div:nth-of-type(2) > form > button:hover {
   background-color: white;
-  color: #1698BB;
+  color: #1698bb;
 }
 
 #team {
@@ -986,7 +1017,7 @@ main {
   color: white;
   text-transform: capitalize;
   font-family: "SemiBold";
-  font-size: 3.177vw;
+  font-size: 30px;
   margin-bottom: 50px;
 }
 #team > div {
@@ -999,7 +1030,7 @@ main {
 #team > div > span {
   width: 415px;
   height: 590px;
-  background-color: #020A0D;
+  background-color: #020a0d;
   cursor: pointer;
 }
 #team > div > span > figure {
@@ -1011,11 +1042,15 @@ main {
 #team > div > span > figure > img {
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: 0.4s ease-in-out;
 }
 #team > div > span > figure::before {
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
   content: "";
   display: block;
   height: 100%;
@@ -1041,16 +1076,16 @@ main {
 #team > div > span > div > div:nth-of-type(1) > h3 {
   color: white;
   text-transform: capitalize;
-  font-size: 2.031vw;
+  font-size: 24px;
   font-family: "SemiBold";
   transition: 0.4s ease-in-out;
   margin-bottom: 5px;
   text-align: center;
 }
 #team > div > span > div > div:nth-of-type(1) > h6 {
-  font-size: 1.042vw;
+  font-size: 18px;
   text-transform: capitalize;
-  color: #92949F;
+  color: #92949f;
   font-family: "Regular";
   text-align: center;
 }
@@ -1064,11 +1099,11 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #1698BB;
+  border: 1px solid #1698bb;
   text-transform: capitalize;
   font-family: "Medium";
   font-size: 18px;
-  color: #1698BB;
+  color: #1698bb;
   transition: all 0.3s ease-in-out;
 }
 #team > div > span > div > div:nth-of-type(2) > a:hover {
@@ -1092,13 +1127,39 @@ footer {
 }
 footer > section {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
 }
 footer > section > div {
   height: 100%;
+  display: flex;
+  &:nth-of-type(1) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  &:nth-of-type(2) {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+  }
+  &:nth-of-type(3) {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+  }
+  &:nth-of-type(4) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 }
-footer > section > div:nth-of-type(2), footer > section > div:nth-of-type(3), footer > section > div:nth-of-type(4) {
-  padding-left: 140px;
-}
+/* footer > section > div:nth-of-type(2),
+footer > section > div:nth-of-type(3),
+footer > section > div:nth-of-type(4) {
+  display: flex;
+  flex-direction: column;
+} */
 footer > section > div > figure {
   margin-bottom: 25px;
 }
@@ -1112,7 +1173,7 @@ footer > section > div > h3 {
 footer > section > div > p {
   font-size: 20px;
   text-transform: capitalize;
-  color: #92949F;
+  color: #92949f;
   font-family: "Regular";
 }
 footer > section > div > ul {
@@ -1121,7 +1182,7 @@ footer > section > div > ul {
 footer > section > div > ul > li {
   font-size: 20px;
   text-transform: capitalize;
-  color: #92949F;
+  color: #92949f;
   font-family: "Regular";
   padding-bottom: 10px;
 }
@@ -1129,7 +1190,7 @@ footer > section > div > ul > li > a {
   transition: 0.4s ease-in-out;
 }
 footer > section > div > ul > li > a:hover {
-  color: #1698BB;
+  color: #1698bb;
 }
 footer > section > div > div {
   display: flex;
@@ -1140,7 +1201,7 @@ footer > section > div > div > a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1698BB;
+  background-color: #1698bb;
   margin-right: 15px;
   transition: 0.4s ease-in-out;
   color: white;
@@ -1159,4 +1220,4 @@ footer > a > figure {
 }
 footer > a > figure > img {
   max-width: 100%;
-}/*# sourceMappingURL=master.css.map */
+} /*# sourceMappingURL=master.css.map */
