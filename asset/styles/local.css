@@ -24,6 +24,26 @@
   header > #header-content {
     align-items: center;
   }
+  header > #header-content > h2 {
+    font-size: 25px;
+  }
+  header > #header-content > h1 {
+    font-size: 55px;
+    text-align: center;
+  }
+  header > #header-content > figure {
+    margin-bottom: 25px;
+  }
+  header > #header-content > p {
+    font-size: 18px;
+    text-align: center;
+  }
+  > div > span > div {
+    padding: 15px !important;
+  }
+  .title {
+    font-size: 25px !important;
+  }
 }
 @media screen and (min-width: 576px) {
   header > nav {
@@ -55,11 +75,31 @@
     width: 32px;
     height: 32px;
   }
+  header > div > span > div {
+    padding: 15px !important;
+  }
   header > #header-content {
     align-items: center;
   }
+  header > #header-content > h2 {
+    font-size: 25px;
+  }
+  header > #header-content > h1 {
+    font-size: 55px;
+    text-align: center;
+  }
+  header > #header-content > figure {
+    margin-bottom: 25px;
+  }
+  header > #header-content > p {
+    font-size: 18px;
+    text-align: center;
+  }
   #singUp > div {
     height: 200px;
+  }
+  .title {
+    font-size: 25px !important;
   }
 }
 @media screen and (min-width: 768px) {
@@ -109,6 +149,9 @@
   #tournaments > div > span {
     width: 48%;
     margin-bottom: 15px;
+  }
+  #tournaments > div > span > div {
+    padding: 15px !important;
   }
   #tournaments > div > span > div > div:nth-of-type(1) > h3 {
     font-size: 25px;
@@ -168,10 +211,27 @@
   footer > section > div:nth-of-type(4) {
     width: 33%;
   }
+  .title {
+    font-size: 35px !important;
+  }
 }
 @media screen and (min-width: 992px) {
   header > #header-content {
     align-items: start;
+  }
+  header > #header-content > h2 {
+    font-size: 31px;
+  }
+  header > #header-content > h1 {
+    font-size: 75px;
+    text-align: start;
+  }
+  header > #header-content > figure {
+    margin-bottom: 25px;
+  }
+  header > #header-content > p {
+    font-size: 21px;
+    text-align: start;
   }
   #comment > div > h2 {
     font-size: 47px;
@@ -215,7 +275,7 @@
     font-size: 35px;
   }
   #tournaments > div > span > div > div:nth-of-type(2) > span {
-    font-size: 14px;
+    font-size: 12px;
   }
   #streaming > h2 {
     color: white;
@@ -269,6 +329,9 @@
   footer > section > div {
     width: 23% !important;
   }
+  .title {
+    font-size: 50px !important;
+  }
 }
 @media screen and (min-width: 1200px) {
   header > nav {
@@ -318,6 +381,9 @@
   #games > div > span {
     width: 24%;
   }
+  #tournaments > div > span {
+    width: 45%;
+  }
   #players > div > div > div > figure > div > h3 {
     font-size: 18px;
     color: white;
@@ -332,6 +398,14 @@
   }
   #singUp > div > h2 {
     font-size: 47px;
+  }
+  .title {
+    font-size: 60px !important;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #tournaments > div > span {
+    width: 32%;
   }
 }
 @media screen and (min-width: 1600px) {

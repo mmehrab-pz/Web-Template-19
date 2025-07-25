@@ -1,25 +1,30 @@
 //  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @media screen and (max-width: 576px) {
   header {
-    > nav {
-      > figure {
+    >nav {
+      >figure {
         width: 80%;
       }
-      > ul {
+
+      >ul {
         display: none;
       }
-      > div {
+
+      >div {
         &:nth-of-type(1) {
           display: none;
         }
+
         &:nth-of-type(2) {
           width: 20%;
           display: flex;
-          > figure {
+
+          >figure {
             display: flex;
             justify-content: center;
             align-items: center;
-            > img {
+
+            >img {
               width: 32px;
               height: 32px;
             }
@@ -27,39 +32,77 @@
         }
       }
     }
-    > #header-content {
+
+    >#header-content {
       align-items: center;
+
+      >h2 {
+        font-size: 25px;
+      }
+
+      >h1 {
+        font-size: 55px;
+        text-align: center;
+      }
+
+      >figure {
+        margin-bottom: 25px;
+      }
+
+      >p {
+        font-size: 18px;
+        text-align: center;
+      }
     }
+  }
+
+  >div {
+    >span {
+      >div {
+        padding: 15px !important;
+      }
+    }
+  }
+
+  .title {
+    font-size: 25px !important;
   }
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @media screen and (min-width: 576px) {
   header {
-    > nav {
+    >nav {
       align-items: center;
-      > figure {
+
+      >figure {
         width: 50%;
       }
-      > ul {
+
+      >ul {
         display: none;
       }
-      > div {
+
+      >div {
         &:nth-of-type(1) {
           width: 40%;
           display: flex;
-          > span {
+
+          >span {
             font-size: 16px;
           }
         }
+
         &:nth-of-type(2) {
           display: flex;
           width: 10%;
-          > figure {
+
+          >figure {
             display: flex;
             justify-content: center;
             align-items: center;
-            > img {
+
+            >img {
               width: 32px;
               height: 32px;
             }
@@ -67,54 +110,92 @@
         }
       }
     }
-    > #header-content {
+
+    >div {
+      >span {
+        >div {
+          padding: 15px !important;
+        }
+      }
+    }
+
+    >#header-content {
       align-items: center;
+
+      >h2 {
+        font-size: 25px;
+      }
+
+      >h1 {
+        font-size: 55px;
+        text-align: center;
+      }
+
+      >figure {
+        margin-bottom: 25px;
+      }
+
+      >p {
+        font-size: 18px;
+        text-align: center;
+      }
     }
   }
-  #singUp > div {
+
+  #singUp>div {
     height: 200px;
+  }
+
+  .title {
+    font-size: 25px !important;
   }
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @media screen and (min-width: 768px) {
-  #singUp > div {
+  #singUp>div {
     height: 280px;
   }
+
   header {
-    > #header-content {
+    >#header-content {
       align-items: center;
     }
   }
 
   #explore {
-    > div {
-      > span {
+    >div {
+      >span {
         width: 48%;
       }
     }
   }
+
   #games {
-    > h2 {
+    >h2 {
       font-size: 24px;
     }
-    > div {
-      > span {
+
+    >div {
+      >span {
         width: 48%;
       }
     }
   }
+
   #comment {
-    > div {
-      > h2 {
+    >div {
+      >h2 {
         font-size: 35px;
       }
-      > h3 {
+
+      >h3 {
         font-size: 18px;
       }
     }
   }
-  #players > div > div {
+
+  #players>div>div {
     width: 48%;
     height: 200px;
     padding: 15px;
@@ -122,15 +203,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     &:nth-of-type(2) {
       display: flex;
     }
+
     &:nth-of-type(3) {
       display: none;
     }
   }
+
   #tournaments {
-    > h2 {
+    >h2 {
       color: white;
       text-transform: capitalize;
       font-family: "SemiBold";
@@ -138,19 +222,23 @@
       margin-bottom: 50px;
     }
 
-    > div {
-      > span {
+    >div {
+      >span {
         width: 48%;
         margin-bottom: 15px;
-        > div {
-          > div {
+
+        >div {
+          padding: 15px !important;
+
+          >div {
             &:nth-of-type(1) {
-              > h3 {
+              >h3 {
                 font-size: 25px;
               }
             }
+
             &:nth-of-type(2) {
-              > span {
+              >span {
                 font-size: 8px;
               }
             }
@@ -159,8 +247,9 @@
       }
     }
   }
+
   #streaming {
-    > h2 {
+    >h2 {
       color: white;
       text-transform: capitalize;
       font-family: "SemiBold";
@@ -168,14 +257,15 @@
       margin-bottom: 50px;
     }
 
-    > div {
-      > span {
+    >div {
+      >span {
         width: 48%;
         margin-bottom: 15px;
-        > div {
-          > div {
+
+        >div {
+          >div {
             &:nth-of-type(1) {
-              > h3 {
+              >h3 {
                 font-size: 25px;
               }
             }
@@ -184,74 +274,110 @@
       }
     }
   }
-  #singUp > div {
-    > h2 {
+
+  #singUp>div {
+    >h2 {
       font-size: 30px;
     }
-    > a {
+
+    >a {
       margin-top: 20px;
     }
   }
+
   #update {
-    > div {
-      > span {
+    >div {
+      >span {
         width: 48%;
       }
     }
   }
+
   #connected {
-    > div:nth-of-type(2) {
+    >div:nth-of-type(2) {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
       margin-top: 15px;
-      > form {
+
+      >form {
         display: flex;
         justify-content: space-between;
-        > input {
+
+        >input {
           width: 70%;
         }
-        > button {
+
+        >button {
           width: 20%;
           margin-top: 0;
         }
       }
     }
   }
-  footer > section > div {
+
+  footer>section>div {
     &:nth-of-type(1) {
       width: 100%;
     }
+
     &:nth-of-type(2) {
       width: 33%;
     }
+
     &:nth-of-type(3) {
       width: 33%;
     }
+
     &:nth-of-type(4) {
       width: 33%;
     }
+  }
+
+  .title {
+    font-size: 35px !important;
   }
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @media screen and (min-width: 992px) {
   header {
-    > #header-content {
+    >#header-content {
       align-items: start;
+
+      >h2 {
+        font-size: 31px;
+      }
+
+      >h1 {
+        font-size: 75px;
+        text-align: start;
+      }
+
+      >figure {
+        margin-bottom: 25px;
+      }
+
+      >p {
+        font-size: 21px;
+        text-align: start;
+      }
     }
   }
+
   #comment {
-    > div {
-      > h2 {
+    >div {
+      >h2 {
         font-size: 47px;
       }
-      > p {
+
+      >p {
         width: 60%;
       }
     }
   }
-  #players > div > div {
+
+  #players>div>div {
     width: 32%;
     height: 200px;
     padding: 15px;
@@ -259,21 +385,25 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     &:nth-of-type(2) {
       display: flex;
     }
+
     &:nth-of-type(3) {
       display: flex;
     }
   }
-  #players > div > div > div > figure > div > h3 {
+
+  #players>div>div>div>figure>div>h3 {
     font-size: 13px;
     color: white;
     text-transform: capitalize;
     font-family: "SemiBold";
   }
+
   #tournaments {
-    > h2 {
+    >h2 {
       color: white;
       text-transform: capitalize;
       font-family: "SemiBold";
@@ -281,20 +411,22 @@
       margin-bottom: 50px;
     }
 
-    > div {
-      > span {
+    >div {
+      >span {
         width: 48%;
         margin-bottom: 15px;
-        > div {
-          > div {
+
+        >div {
+          >div {
             &:nth-of-type(1) {
-              > h3 {
+              >h3 {
                 font-size: 35px;
               }
             }
+
             &:nth-of-type(2) {
-              > span {
-                font-size: 14px;
+              >span {
+                font-size: 12px;
               }
             }
           }
@@ -304,7 +436,7 @@
   }
 
   #streaming {
-    > h2 {
+    >h2 {
       color: white;
       text-transform: capitalize;
       font-family: "SemiBold";
@@ -312,15 +444,16 @@
       margin-bottom: 50px;
     }
 
-    > div {
-      > span {
+    >div {
+      >span {
         width: 32%;
         margin-bottom: 15px;
-        > div {
-          > div {
+
+        >div {
+          >div {
             &:nth-of-type(1) {
-              > div {
-                > h3 {
+              >div {
+                >h3 {
                   font-size: 14px;
                 }
               }
@@ -330,23 +463,28 @@
       }
     }
   }
-  #singUp > div {
+
+  #singUp>div {
     height: 360px;
-    > h2 {
+
+    >h2 {
       font-size: 38px;
     }
   }
+
   #update {
-    > div {
-      > span {
+    >div {
+      >span {
         width: 24%;
-        > div {
-          > div {
+
+        >div {
+          >div {
             &:nth-of-type(1) {
-              > h3 {
+              >h3 {
                 font-size: 20px;
               }
-              > h6 {
+
+              >h6 {
                 font-size: 14px;
               }
             }
@@ -355,67 +493,85 @@
       }
     }
   }
+
   #connected {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    > div {
+
+    >div {
       &:nth-of-type(1) {
         width: 35% !important;
       }
+
       &:nth-of-type(2) {
         width: 60% !important;
-        > form {
-          > input {
+
+        >form {
+          >input {
             width: 78%;
           }
-          > button {
+
+          >button {
             width: 20%;
           }
         }
       }
     }
   }
-  footer > section {
+
+  footer>section {
     justify-content: space-between;
-    > div {
+
+    >div {
       width: 23% !important;
     }
+  }
+
+  .title {
+    font-size: 50px !important;
   }
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @media screen and (min-width: 1200px) {
   header {
-    > nav {
+    >nav {
       display: flex;
       justify-content: space-between;
       width: 100%;
       gap: 20px;
-      > figure {
+
+      >figure {
         width: 14% !important;
       }
-      > ul {
+
+      >ul {
         width: 71% !important;
         display: flex;
-        > li {
-          > a {
+
+        >li {
+          >a {
             font-size: 14px;
           }
         }
       }
-      > div {
+
+      >div {
         &:nth-of-type(1) {
           width: 15% !important;
           display: flex;
-          > span {
+
+          >span {
             font-size: 16px;
           }
         }
+
         &:nth-of-type(2) {
           display: none;
-          > figure {
-            > img {
+
+          >figure {
+            >img {
               width: 32px;
               height: 32px;
             }
@@ -424,45 +580,60 @@
       }
     }
   }
+
   #explore {
-    > div {
-      > span {
+    >div {
+      >span {
         width: 24%;
         height: 204px;
-        > h5 {
+
+        >h5 {
           font-size: 23px;
         }
-        > p {
+
+        >p {
           font-size: 15px;
           text-align: center;
         }
       }
     }
   }
+
   #games {
-    > h2 {
+    >h2 {
       font-size: 34px;
     }
-    > div {
-      > span {
+
+    >div {
+      >span {
         width: 24%;
       }
     }
   }
-  #players > div > div > div > figure > div > h3 {
+
+  #tournaments {
+    >div {
+      >span {
+        width: 45%;
+      }
+    }
+  }
+
+  #players>div>div>div>figure>div>h3 {
     font-size: 18px;
     color: white;
     text-transform: capitalize;
     font-family: "SemiBold";
   }
+
   #streaming {
-    > div {
-      > span {
-        > div {
-          > div {
+    >div {
+      >span {
+        >div {
+          >div {
             &:nth-of-type(1) {
-              > div {
-                > h3 {
+              >div {
+                >h3 {
                   font-size: 24px;
                 }
               }
@@ -472,32 +643,46 @@
       }
     }
   }
-  #singUp > div {
+
+  #singUp>div {
     height: 400px;
-    > h2 {
+
+    >h2 {
       font-size: 47px;
     }
+  }
+
+  .title {
+    font-size: 60px !important;
   }
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @media screen and (min-width: 1400px) {
+  #tournaments {
+    >div {
+      >span {
+        width: 32%;
+      }
+    }
+  }
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @media screen and (min-width: 1600px) {
   header {
-    > nav {
-      > ul {
-        > li {
-          > a {
+    >nav {
+      >ul {
+        >li {
+          >a {
             font-size: 20px;
           }
         }
       }
-      > div {
+
+      >div {
         &:nth-of-type(1) {
-          > span {
+          >span {
             font-size: 20px;
           }
         }
